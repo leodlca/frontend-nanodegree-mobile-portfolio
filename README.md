@@ -21,7 +21,7 @@ To get started, check out the repository and inspect the code.
 
 ####3. Pizza (JS opt)
 - Removed tons of redundancy and unnecessary loops or wrong calls (which were supposed to use requestAnimationFrame function for example).
-- Improved scrolling from 4~10FPS to 49~60FPS.
+- Improved scrolling from 4~10FPS to 59~60FPS.
 
 ####4. How to keep improving
 - Add cache support to the website (currently not possible because I'm using github pages, and I don't have the necessary privileges to do it).

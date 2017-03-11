@@ -4,6 +4,28 @@ Your challenge, if you wish to accept it (and we sure hope you will), is to opti
 
 To get started, check out the repository and inspect the code.
 
+###What have I done to optimize this website.
+
+####1. Compression and general CRP opt
+- Compressed all of the images, and resized pizzeria, because its resolution was over 2k.
+- Set all of the scripts of index.html (and 2048, web-perf, project-mob) to load after the page was loaded and rendered, using the async tag.
+- Set print.css to load only when the page is requested by a printer, using media="print".
+- Removed external request for fonts.
+- Compressed css and html (removed white trailing space).
+- Improved PageSpeed ranking from 45~50 to 85~92
+
+####2. Style.css
+- Copied all of the content from style.css, put into an ```<script>``` tag, inside html. (Personally, I don't think that's a good solution because it makes it harder to maintain a webpage when you load all of its style this way. But it was necessary, and as this webpage is static, it's probably not going to be a problem.)
+- (fixed a minor bug, where the wrong fonts were loaded instead of Open Sans).
+- Improved PageSpeed ranking to 91~97.
+
+####3. Pizza (JS opt)
+- Removed tons of redundancy and unnecessary loops or wrong calls (which were supposed to use requestAnimationFrame function for example).
+- Improved scrolling from 4~10FPS to 49~60FPS.
+
+####4. How to keep improving
+- Add cache support to the website (currently not possible because I'm using github pages, and I don't have the necessary privileges to do it).
+
 ### Getting started
 
 ####Part 1: Optimize PageSpeed Insights score for index.html

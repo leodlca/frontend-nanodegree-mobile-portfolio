@@ -10,6 +10,8 @@
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
+  will-change: transform;
+
 }
 
 input {
@@ -29,10 +31,19 @@ form {
   font-weight: 800;
 }
 
-.mover {
+.mover { /*Added new elements to improve painting time*/
   position: fixed;
   width: 256px;
   z-index: -1;
+  -webkit-will-change:transform;
+  -moz-will-change:transform;
+  will-change:transform;
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  transform:translateZ(0);
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  backface-visibility:hidden;
 }
 
 .randomPizzaContainer {

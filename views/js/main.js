@@ -446,24 +446,24 @@ var resizePizzas = function(size) {
         // Removed loop, calculate everything with the same value because all pizzas 
         // have the same width.
         switch (size) {
-                case "1":
-                    size = 187.5;
-                    break;
-                case "2":
-                    size = 249.975;
-                    break;
-                case "3":
-                    size = 375;
-                    break;
-                default:
-                    console.log("bug in sizeSwitcher");
-            }
-    
+            case "1":
+                size = 187.5;
+                break;
+            case "2":
+                size = 249.975;
+                break;
+            case "3":
+                size = 375;
+                break;
+            default:
+                console.log("bug in sizeSwitcher");
+        }
+
         // Creates an array to find out how many pizzas are there.
-        lotsOfPizzas = document.querySelectorAll(".randomPizzaContainer")
+        var lotsOfPizzas = document.querySelectorAll(".randomPizzaContainer");
 
         // Changes its width depending on the input
-        for (var i = 0; i < lotsOfPizzas.length; i++) {
+        for (var i = 0; i < lotsOfPizzas.lenght; i++) {
             lotsOfPizzas[i].style.width = size + 'px';
         }
     }

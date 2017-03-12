@@ -463,7 +463,7 @@ var resizePizzas = function(size) {
         var lotsOfPizzas = document.querySelectorAll(".randomPizzaContainer");
 
         // Changes its width depending on the input
-        for (var i = 0; i < lotsOfPizzas.lenght; i++) {
+        for (var i = 0; i < lotsOfPizzas.length; i++) {
             lotsOfPizzas[i].style.width = size + 'px';
         }
     }

@@ -12,7 +12,7 @@ To get started, check out the repository and inspect the code.
 - Set print.css to load only when the page is requested by a printer, using media="print".
 - Removed external request for fonts.
 - Compressed css and html (removed white trailing space).
-- Improved PageSpeed ranking from 45~50 to 85~92
+- Improved PageSpeed ranking from 45-50 to 85-92
 
 #### 2. Style.css
 - Copied all of the content from style.css, put into an ```<script>``` tag, inside html. (Personally, I don't think that's a good solution because it makes it harder to maintain a webpage when you load all of its style this way. But it was necessary, and as this webpage is static, it's probably not going to be a problem.)

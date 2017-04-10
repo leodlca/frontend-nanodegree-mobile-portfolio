@@ -1,8 +1,8 @@
 ## Website Performance Optimization portfolio project
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+This project is an optimized portfolio, that was previously poorly implemented, its pagespeed ranking was below 60, some scripts took more than 1s to load.
 
-To get started, check out the repository and inspect the code.
+In the section below, you can check out everything I've done to optimize it.
 
 ### What have I done to optimize this website.
 
@@ -29,7 +29,7 @@ To get started, check out the repository and inspect the code.
 #### 4. How to keep improving
 - Add cache support to the website (currently not possible because I'm using github pages, and I don't have the necessary privileges to do it).
 
-### Getting started
+### Getting started (These are instructions from Udacity)
 
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
